@@ -1,0 +1,72 @@
+#logo-page {
+  display: grid;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+#logo {
+  position: relative;
+  font-weight: 700;
+  font-size: 100px;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+#logo span,
+#logo:before,
+#logo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0 solid #F5F5F5;
+  border-radius: 100%;
+  animation: el-logo 1.6s ease-in-out 0s infinite;
+}
+
+#logo span {
+  border-color: #F5F5F5;
+  border-width: 6px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+#logo::before {
+  border-color: #b5b5b5;
+  border-width: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#logo::after {
+  border-color: #9c9c9c;
+  border-width: 2px;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+}
+
+@keyframes el-logo {
+  0%, 100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+  48%, 52% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  #image, #logo {
+    scale: 0.3;
+  }
+}
+
+/*# sourceMappingURL=LandingPage.css.map */

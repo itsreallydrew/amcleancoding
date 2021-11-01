@@ -1,0 +1,126 @@
+$circle-radius: 100px;
+$WhiteSmoke: #F5F5F5;
+
+#logo-page {
+  display: grid;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+#logo {
+    position: relative;
+    font-weight: 700;
+    font-size: 100px;
+    text-align: center;
+
+    color: $WhiteSmoke;
+
+}
+
+#logo span,
+#logo:before,
+#logo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0 solid $WhiteSmoke;
+  border-radius: 100%;
+  
+  animation: el-logo 1.6s ease-in-out 0s infinite;
+}
+
+
+#logo span {
+    border-color: $WhiteSmoke;
+    border-width: 6px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#logo::before {
+    border-color: darken($WhiteSmoke, 25%);
+    border-width: 3px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#logo::after {
+    border-color: darken($WhiteSmoke, 35%);
+    border-width: 2px;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+
+@keyframes el-logo {
+  0%,
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+  48%,
+  52% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+// MEDIA QUERIES
+@media (max-width: 600px) {
+
+#image, #logo {
+  scale: .3;
+}
+
+// #logo-page {
+//   display: grid;
+//   grid-template-rows: 1fr 5fr;
+//   text-align: center;
+// }
+
+
+  
+// #logo::before {
+//     border-color: darken($WhiteSmoke, 15%);
+//     border-width: 3px;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+
+// #logo::after {
+//     border-color: darken($WhiteSmoke, 25%);
+//     border-width: 2px;
+//     top: -10px;
+//     left: -10px;
+//     right: -10px;
+//     bottom: -10px;
+// }
+
+
+// @keyframes el-logo {
+//   0%,
+//   100% {
+//     transform: scale(1.1);
+//     opacity: 0;
+//   }
+//   48%,
+//   52% {
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+// }
+
+
+}
