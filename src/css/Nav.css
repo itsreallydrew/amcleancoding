@@ -1,0 +1,21 @@
+.nav {
+  justify-self: flex-end;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  margin-right: 20px;
+}
+
+.social-link {
+  background-color: white;
+}
+
+.social-link img {
+  height: 32px;
+  width: 32px;
+  color: white;
+}
+
+/*# sourceMappingURL=Nav.css.map */

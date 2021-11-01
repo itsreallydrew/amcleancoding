@@ -1,0 +1,17 @@
+.about-page {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  flex-flow: column wrap;
+}
+
+.crypto-vid {
+  width: 800px;
+}
+
+.crypto-vid video {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=About.css.map */

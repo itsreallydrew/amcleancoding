@@ -1,0 +1,17 @@
+.all-skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 0 33%;
+  gap: 50px;
+  justify-content: center;
+}
+
+.skill-logo {
+  margin-top: 50px;
+  height: 320px;
+  width: 320px;
+  background-color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Skills.css.map */
